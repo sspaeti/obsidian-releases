@@ -2215,5 +2215,12 @@
     "repo": "incantatem2/Obsidian-neutral-academia",
     "screenshot": "images/neutralacademia-dark-thumbnail.jpg",
     "modes": ["dark", "light"]
+  },
+  {
+    "name": "Kanagawa Paper",
+    "author": "sspaeti",
+    "repo": "sspaeti/obsidian_kanagawa_paper",
+    "screenshot": "dark.png",
+    "modes": ["dark", "light"]
   }
 ]
