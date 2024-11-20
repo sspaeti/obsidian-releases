@@ -11,7 +11,7 @@ jobs:
   plugin-validation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: "refs/pull/${{ github.event.number }}/merge"
       - uses: actions/setup-node@v2
@@ -45,7 +45,11 @@ jobs:
                 addError('You modified files other than `community-plugins.json`.');
               }
 
-              if (context.payload.pull_request.body.includes('Please switch to **Preview** and select one of the following links:')) {
+              if (!context.payload.pull_request.maintainer_can_modify) {
+                addWarning('Maintainers of this repo should be allowed to edit this pull request. This speeds up the approval process.');
+              }
+
+              if (!context.payload.pull_request.body.includes('I have added a license in the LICENSE file.')) {
                 addError('You did not follow the pull request template');
               }
 
@@ -101,42 +105,56 @@ jobs:
                 addError(`It seems like you made a typo in the repository field \`${plugin.repo}\`.`);
               }
 
-              if (plugin.id.toLowerCase().startsWith('obsidian')) {
+              if (plugin.id.toLowerCase().includes('obsidian')) {
                 addError(`Please don't use the word \`obsidian\` in the plugin ID. The ID is used for your plugin's folder so keeping it short and simple avoids clutter and helps with sorting.`);
               }
               if (plugin.id.toLowerCase().endsWith('plugin')) {
                 addError(`Please don't use the word \`plugin\` in the plugin ID. The ID is used for your plugin's folder so keeping it short and simple avoids clutter and helps with sorting.`);
               }
               if (!/^[a-z0-9-_]+$/.test(plugin.id)) {
-                addError('The plugin ID is not valid. Only alphanumeric characters and dashes are allowed.');
+                addError('The plugin ID is not valid. Only alphanumeric lowercase characters and dashes are allowed.');
               }
 
-              if (plugin.name.toLowerCase().startsWith('obsidian')) {
-                addError(`Please don't use the word \`Obsidian\` at the start of your plugin name since it's redundant and makes it harder to sort the plugin list.`);
-              }
               else if (plugin.name.toLowerCase().includes('obsidian')) {
-                addWarning(`Please don't use the word \`Obsidian\` in your plugin name since it's redundant and adds clutter to the plugin list.`);
+                addError(`Please don't use the word \`Obsidian\` in your plugin name since it's redundant and adds clutter to the plugin list.`);
               }
               if (plugin.name.toLowerCase().endsWith('plugin')) {
-                addWarning(`Please don't use the word \`Plugin\` in the plugin name since it's redundant and adds clutter to the plugin list.`);
+                addError(`Please don't use the word \`Plugin\` in the plugin name since it's redundant and adds clutter to the plugin list.`);
               }
 
               if (/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(plugin.author)) {
                 addWarning(`We generally discourage including your email addresses in the \`author\` field.`);
               }
 
-              if (plugin.description.length > 300) {
-                addWarning(`Your plugin has a long description. Users typically find it difficult to read a very long description, so you should keep it short and concise.`);
+              if (plugin.description.toLowerCase().includes('obsidian')) {
+                addError('Please don\'t include `Obsidian` in the plugin description');
+              }
+              if (plugin.description.toLowerCase().includes('this plugin') || plugin.description.toLowerCase().includes('this is a plugin') || plugin.description.toLowerCase().includes('this plugin allows')) {
+                addWarning('Avoid including sentences like `This is a plugin that does` in your description');
+              }
+              
+              if (plugin.description.length > 250) {
+                addError(`Your plugin has a long description. Users typically find it difficult to read a very long description, so you should keep it short and concise.`);
               }
 
               if (plugins.filter(p => p.id === plugin.id).length > 1) {
-                addError(`There is already a plugin with this ID.`);
+                addError(`There is already a plugin with the id \`${plugin.id}\`.`);
               }
               if (plugins.filter(p => p.name === plugin.name).length > 1) {
-                addError(`There is already a plugin with this name.`);
+                addError(`There is already a plugin with the name \`${plugin.name}\`.`);
               }
               if (plugins.filter(p => p.repo === plugin.repo).length > 1) {
                 addError(`There is already a entry pointing to the \`${plugin.repo}\` repository.`);
+              }
+
+              const removedPlugins = JSON.parse(fs.readFileSync('community-plugins-removed.json', 'utf8'));
+
+              if (removedPlugins.filter(p => p.id === plugin.id).length > 1) {
+                addError(`Another plugin used to exist with the id \`${plugin.id}\`. To avoid issues for users that still have the old plugin installed using this plugin ID is not allowed`);
+              }
+
+              if (removedPlugins.filter(p => p.name === plugin.name).length > 1) {
+                addWarning(`Another plugin used to exist with the name \`${plugin.name}\`. To avoid confussion we recommend against using this name.`);
               }
 
               let manifest = null;
@@ -153,6 +171,13 @@ jobs:
               }
 
               if (manifest) {
+                let validManifestKeys = ['id', 'name', 'description', 'author', 'version', 'minAppVersion', 'isDesktopOnly'];
+                for (let key of validManifestKeys) {
+                  if (!manifest.hasOwnProperty(key)) {
+                    addError(`Your manifest does not have the required \`${key}\` property.`);
+                  }
+                }
+
                 if (manifest.id !== plugin.id) {
                   addError(`Plugin ID mismatch, the ID in this PR (\`${plugin.id}\`) is not the same as the one in your repo (\`${manifest.id}\`). If you just changed your plugin ID, remember to change it in the manifest.json in your repo and your latest GitHub release.`);
                 }
@@ -166,12 +191,15 @@ jobs:
                   }
 
                   if (manifest.authorUrl.toLowerCase().includes("github.com/" + plugin.repo.toLowerCase())) {
-                    addWarning(`The \`authorUrl\` field in your manifest should not point to the GitHub repository of the plugin.`);
+                    addError(`The \`authorUrl\` field in your manifest should not point to the GitHub repository of the plugin.`);
                   }
                 }
 
                 if (manifest.fundingUrl && manifest.fundingUrl === "https://obsidian.md/pricing") {
-                  addError(`The \`fundingUrl\` field in your manifest should not point to the Obsidian Website, If you don't have a link were users can donate to you, you can just omit this.`);
+                  addError(`The \`fundingUrl\` field in your manifest should not point to the Obsidian Website, If you don't have a link were users can donate to you, you can just remove it from the manifest.`);
+                }
+                if (manifest.fundingUrl && manifest.fundingUrl === "") {
+                  addError('The `fundingUrl` is meant for links to services like _Buy me a coffee_, _GitHub sponsors_ and so on, if you don\'t have such a link remove it from the manifest.');
                 }
 
                 if (!/^[0-9.]+$/.test(manifest.version)) {
@@ -244,28 +272,30 @@ jobs:
                 title: `Add plugin: ${plugin.name}`
               });
 
-              if(!context.payload.pull_request.labels.includes('Changes requested')) {
+              if(!context.payload.pull_request.labels.filter(label => label.name === 'Changes requested').length > 0) {
                 labels.push("Ready for review");
               }
             }
-
-            if (context.payload.pull_request.labels.includes('Changes requested')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Changes requested').length > 0) {
               labels.push('Changes requested');
             }
-            if (context.payload.pull_request.labels.includes('Additional review required')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Additional review required').length > 0) {
               labels.push('Additional review required');
             }
-            if (context.payload.pull_request.labels.includes('Minor changes requested')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Minor changes requested').length > 0) {
               labels.push('Minor changes requested');
             }
-            if (context.payload.pull_request.labels.includes('Requires author rebase')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'requires author rebase').length > 0) {
               labels.push('requires author rebase');
             }
-            if (context.payload.pull_request.labels.includes('Installation not recommended')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Installation not recommended').length > 0) {
               labels.push('Installation not recommended');
             }
-            if (context.payload.pull_request.labels.includes('Changes made')) {
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Changes made').length > 0) {
               labels.push('Changes made');
+            }
+            if (context.payload.pull_request.labels.filter(label => label.name === 'Skipped code scan').length > 0) {
+              labels.push('Skipped code scan');
             }
             labels.push('plugin');
 

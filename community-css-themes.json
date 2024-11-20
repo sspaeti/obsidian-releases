@@ -279,13 +279,6 @@
     "modes": ["dark", "light"]
   },
   {
-    "name": "Molecule",
-    "author": "Manas Sadasivuni",
-    "repo": "manassadasivuni/obsidian-molecule",
-    "screenshot": "images/Screenshot1.png",
-    "modes": ["light"]
-  },
-  {
     "name": "Comfort Smooth",
     "author": "Spark",
     "repo": "sparklau/comfort-smooth",
@@ -350,13 +343,6 @@
     "modes": ["dark"]
   },
   {
-    "name": "Vileplume",
-    "author": "Hung-Su Nguyen",
-    "repo": "hungsu/vileplume-obsidian",
-    "screenshot": "Vileplume.png",
-    "modes": ["dark"]
-  },
-  {
     "name": "Aurora",
     "author": "Benny Guo",
     "repo": "auroral-ui/aurora-obsidian-md",
@@ -368,13 +354,6 @@
     "author": "izumin5210",
     "repo": "izumin5210/obsidian-iceberg",
     "screenshot": "screenshot.png",
-    "modes": ["dark"]
-  },
-  {
-    "name": "Night Owl",
-    "author": "Ben Hong",
-    "repo": "bencodezen/obsidian-night-owl-theme",
-    "screenshot": "obsidian-night-owl-theme.png",
     "modes": ["dark"]
   },
   {
@@ -475,7 +454,7 @@
     "name": "Shimmering Focus",
     "author": "pseudometa",
     "repo": "chrisgrieser/shimmering-focus",
-    "screenshot": "assets/promo-screenshot.png",
+    "screenshot": "assets/promo-screenshot.webp",
     "modes": ["dark", "light"]
   },
   {
@@ -483,13 +462,6 @@
     "author": "Ali Soueidan",
     "repo": "lazercaveman/obsidian-firefly-theme",
     "screenshot": "firefly-theme-screenshot.png",
-    "modes": ["dark"]
-  },
-  {
-    "name": "Deep",
-    "author": "cybeerboy",
-    "repo": "cybeerboy/Deep-for-Obsidian",
-    "screenshot": "screenshot.png",
     "modes": ["dark"]
   },
   {
@@ -515,13 +487,6 @@
     "modes": ["dark"]
   },
   {
-    "name": "Agora",
-    "author": "Seraaron",
-    "repo": "Seraaron/agora-obsidian-theme",
-    "screenshot": "agora-theme-preview.png",
-    "modes": ["dark", "light"]
-  },
-  {
     "name": "Faded",
     "author": "Josh Kasap",
     "repo": "JoshKasap/Obsidian-Faded-Theme",
@@ -541,13 +506,6 @@
     "repo": "jdanielmourao/obsidian-sanctum",
     "screenshot": "cover.png",
     "modes": ["dark", "light"]
-  },
-  {
-    "name": "Slytherin",
-    "author": "Zarkov",
-    "repo": "MatheusZarkov/Obsidian-Slytherin",
-    "screenshot": "Cover.png",
-    "modes": ["dark"]
   },
   {
     "name": "Cardstock",
@@ -610,10 +568,9 @@
   {
     "name": "Primary",
     "author": "Cecilia May",
-    "repo": "ceciliamay/obsidianmd-theme-primary",
-    "screenshot": "assets/primary-heroimg.png",
-    "modes": ["light", "dark"],
-    "legacy": true
+    "repo": "primary-theme/obsidian",
+    "screenshot": "assets/obsidian-store-header.png",
+    "modes": ["light", "dark"]
   },
   {
     "name": "Terminal",
@@ -717,14 +674,6 @@
     "legacy": true
   },
   {
-    "name": "Vintage Theme",
-    "author": "natelandau",
-    "repo": "natelandau/obsidian-vintage-theme",
-    "screenshot": "_media/light.png",
-    "modes": ["dark", "light"],
-    "legacy": true
-  },
-  {
     "name": "Catppuccin",
     "author": "Marshall Beckrich",
     "repo": "catppuccin/obsidian",
@@ -759,13 +708,6 @@
     "repo": "caro401/royal-velvet",
     "screenshot": "royal-velvet.png",
     "modes": ["dark", "light"]
-  },
-  {
-    "name": "Aqua",
-    "author": "sahilpatel09",
-    "repo": "sahilpatel09/Aqua-obsidian",
-    "screenshot": "dark.png",
-    "modes": ["dark"]
   },
   {
     "name": "Dracula + LYT",
@@ -844,7 +786,7 @@
     "author": "sspaeti",
     "repo": "sspaeti/obsidian_kanagawa",
     "screenshot": "dark.png",
-    "modes": ["dark"]
+    "modes": ["dark", "light"]
   },
   {
     "name": "Encore",
@@ -901,13 +843,6 @@
     "repo": "krios2146/obsidian-theme-github",
     "screenshot": "imgs/thumbnail.png",
     "modes": ["dark", "light"]
-  },
-  {
-    "name": "Doctorfree",
-    "author": "Ronald Record",
-    "repo": "doctorfree/Obsidian-Doctorfree",
-    "screenshot": "screenshots/headings.png",
-    "modes": ["dark"]
   },
   {
     "name": "SynthWave",
@@ -980,13 +915,6 @@
     "modes": ["dark"]
   },
   {
-    "name": "Origami",
-    "author": "kneecaps",
-    "repo": "7368697661/Origami",
-    "screenshot": "screen.png",
-    "modes": ["dark", "light"]
-  },
-  {
     "name": "Border",
     "author": "Akifyss",
     "repo": "Akifyss/obsidian-border",
@@ -1015,13 +943,6 @@
     "modes": ["dark", "light"]
   },
   {
-    "name": "Wikipedia",
-    "author": "Ha'ani Whitlock",
-    "repo": "Bluemoondragon07/Wikipedia-Theme",
-    "screenshot": "example.png",
-    "modes": ["dark", "light"]
-  },
-  {
     "name": "Material Gruvbox",
     "author": "AllJavi",
     "repo": "AllJavi/material_gruvbox_obsidian",
@@ -1046,7 +967,7 @@
     "name": "Atomus",
     "author": "PedroHenrique17",
     "repo": "PedroHenrique17/Atomus",
-    "screenshot": "Screenshot_1.png",
+    "screenshot": "Screenshot_2.png",
     "modes": ["dark"]
   },
   {
@@ -1260,13 +1181,6 @@
     "modes": ["dark", "light"]
   },
   {
-    "name": "Serenity",
-    "author": "Ha'ani Whitlock",
-    "repo": "Bluemoondragon07/Obsidian-Serenity",
-    "screenshot": "cover-small.png",
-    "modes": ["dark", "light"]
-  },
-  {
     "name": "Olivier’s Theme",
     "author": "Olivier Spinnler",
     "repo": "OlivierPS/Olivier-s-Theme",
@@ -1290,7 +1204,7 @@
   {
     "name": "Buena Vista",
     "author": "oqipo",
-    "repo": "oqipoDev/Buena-Vista-Theme",
+    "repo": "oqipoDev/buena-vista-obsidian",
     "screenshot": "img/thumb.png",
     "modes": ["dark", "light"]
   },
@@ -1365,13 +1279,6 @@
     "modes": ["dark", "light"]
   },
   {
-    "name": "Oozy",
-    "author": "Zak Lezaja",
-    "repo": "zaklezaja/obsidian-oozy",
-    "screenshot": "preview-cover.png",
-    "modes": ["dark"]
-  },
-  {
     "name": "Covert",
     "author": "Schrunchee",
     "repo": "schrunchee/obsidian-covert-theme",
@@ -1390,13 +1297,6 @@
     "author": "Salem Elatar",
     "repo": "SalemElatar/salem-obsidian-theme",
     "screenshot": "screenshot.png",
-    "modes": ["dark", "light"]
-  },
-  {
-    "name": "gummy",
-    "author": "kneecaps",
-    "repo": "7368697661/gummy",
-    "screenshot": "preview_thumb.png",
     "modes": ["dark", "light"]
   },
   {
@@ -1575,7 +1475,7 @@
     "modes": ["light", "dark"]
   },
   {
-    "name": "Vicious", 
+    "name": "Vicious",
     "author": "Zaher Al Majed",
     "repo": "zaheralmajed/vicious-theme-obsidian",
     "screenshot": "screenshot.png",
@@ -1596,10 +1496,724 @@
     "modes": ["dark"]
   },
   {
-    "name": "Rosé Pine", 
+    "name": "Rosé Pine",
     "author": "sspaeti",
     "repo": "sspaeti/obsidian_rose_pine",
     "screenshot": "dark.jpg",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Carbon",
+    "author": "V.H. Belvadi",
+    "repo": "vhbelvadi/obsidian-carbon",
+    "screenshot": "obsidian-screenshot-small.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Phoenix",
+    "author": "RyzenFromFire",
+    "repo": "ryzenfromfire/obsidian-phoenix",
+    "screenshot": "thumbnail.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Garden Gnome (Adwaita, GTK)",
+    "author": "oqipo",
+    "repo": "oqipoDev/garden-gnome-obsidian",
+    "screenshot": "img/thumb.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Monokai",
+    "author": "bitSchleuder",
+    "repo": "bitSchleuder/obsidian-monokai-theme",
+    "screenshot": "assets/monokai-obsidian-theme-thumbnail.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Ethereon",
+    "author": "rohit04saluja",
+    "repo": "ethereontheme/obsidian",
+    "screenshot": "screenshots/dark.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Tomorrow",
+    "author": "deudz",
+    "repo": "deudz/obsidian-tomorrow-theme",
+    "screenshot": "res/thumb.png",
     "modes": ["dark"]
+  },
+  {
+    "name": "Nightfox",
+    "author": "mbromell",
+    "repo": "mbromell/obsidian-nightfox",
+    "screenshot": "thumbnail.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Novadust",
+    "author": "marta.stl",
+    "repo": "mmartamg/novadust-obsidian",
+    "screenshot": "novadust-img.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Pure",
+    "author": "Lychi",
+    "repo": "lychileng/Obsidian-Theme-Pure",
+    "screenshot": "screenshots/cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Prime",
+    "author": "Eda",
+    "repo": "rivea0/obsidian-prime",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Arcane",
+    "author": "xRyul",
+    "repo": "xRyul/obsidian-arcane-theme",
+    "screenshot": "Arcane_sample_01.jpg",
+    "modes": ["dark"]
+  },
+  {
+    "name": "MistyMauve",
+    "author": "RaveSplash",
+    "repo": "RaveSplash/obsidian-misty-mauve",
+    "screenshot": "dark.jpg",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Sea Glass",
+    "author": "Kyle Stewart",
+    "repo": "KStew1017/obsidian-sea-glass-theme",
+    "screenshot": "sea-glass-preview.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Improved Potato",
+    "author": "Dominik Meurer",
+    "repo": "DMeurer/improved-potato",
+    "screenshot": "images/image2.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Neovim",
+    "author": "slavamak",
+    "repo": "slavamak/obsidian-neovim",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Sparkling Day",
+    "author": "Isax785",
+    "repo": "isax785/obsidian-sparkling-day",
+    "screenshot": "img/sparkling_day_small.png",
+    "modes": ["light"]
+  },
+  {
+    "name": "mono black (monochrome, charcoal)",
+    "author": "ZeChArtiahSaher",
+    "repo": "ZeChArtiahSaher/obsidian-mono-black",
+    "screenshot": "img/screen-1.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Tom's Theme",
+    "author": "Tom Kay",
+    "repo": "tomkaygames/Tom-s-Theme",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Soloing",
+    "author": "Isax785",
+    "repo": "isax785/obsidian-soloing",
+    "screenshot": "img/soloing_small.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Reshi",
+    "author": "Laney Elizabeth",
+    "repo": "contrapasso3/Reshi",
+    "screenshot": "Reshi Preview.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Focus",
+    "author": "Moritz Jung",
+    "repo": "mProjectsCode/obsidian-focus-theme",
+    "screenshot": "FocusThemeImage.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Nordic",
+    "author": "Nato",
+    "repo": "natowb/obsidian-nordic",
+    "screenshot": "obsidian-nordic.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Tiniri",
+    "author": "Vlad.studio",
+    "repo": "vladstudio/tiniri-obsidian",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Kurokula",
+    "author": "indyandie",
+    "repo": "Indyandie/kurokula-obsidian-theme",
+    "screenshot": "dark.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Apex",
+    "author": "clearlysid",
+    "repo": "clearlysid/apex",
+    "screenshot": "preview.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Poimandres",
+    "author": "Diego Espinosa",
+    "repo": "yoGhastly/poimandres-obsidian",
+    "screenshot": "dark.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Eldritch",
+    "author": "Eldritch",
+    "repo": "eldritch-theme/eldritch-obsidian",
+    "screenshot": "eldritch.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Soothe",
+    "author": "AwesomeDog",
+    "repo": "AwesomeDog/obsidian-soothe",
+    "screenshot": "preview.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Sandover",
+    "author": "eliz-abeth",
+    "repo": "eliz-abeth/sandover",
+    "screenshot": "/images/sandover-plain.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "Dunite",
+    "author": "Ch0live",
+    "repo": "Ch0live/dunite",
+    "screenshot": "dunite-icon.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Virgo",
+    "author": "Jack Liu",
+    "repo": "loveminimal/obsidian-theme-virgo",
+    "screenshot": "assets/screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Penumbra",
+    "author": "Josef Bisits",
+    "repo": "jbisits/penumbra-obsidian-theme",
+    "screenshot": "screenshot_light.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Trace Labs",
+    "author": "Trace Labs",
+    "repo": "humandecoded/Trace-Labs-Obsidian-Theme",
+    "screenshot": "screenshot.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "W95",
+    "author": "phchnag",
+    "repo": "phchang/W95",
+    "screenshot": "w95.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "Sanctum reborn",
+    "author": "Anto Keinänen",
+    "repo": "antoKeinanen/obsidian-sanctum-reborn",
+    "screenshot": "cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Spectrum Blue",
+    "author": "ryanjrman",
+    "repo": "ryanjrman/Spectrum-Blue",
+    "screenshot": "SpectrumBluePreview.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Midnight",
+    "author": "SemiCirkle",
+    "repo": "SemiCirkle/Midnight-obsidian-theme",
+    "screenshot": "pictures/theme-preview-512x288.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Cobalt Peacock",
+    "author": "dpavaoman",
+    "repo": "dpavaoman/cobalt-peacock-obmd",
+    "screenshot": "screenshot.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Lorens",
+    "author": "Lorens Osman",
+    "repo": "lorens-osman-dev/Lorens-Obsidian-Theme",
+    "screenshot": "cover.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Rift",
+    "author": "Noah Boos",
+    "repo": "NoahBoos/Obsidian-Theme-Rift",
+    "screenshot": "showcase-temporaire.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Blossom",
+    "author": "BlossomTheme",
+    "repo": "BlossomTheme/Obsidian",
+    "screenshot": "screenshot01.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Space",
+    "author": "BHappen",
+    "repo": "bhappen/obsidian-space",
+    "screenshot": "obsidian-space.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Neon Synthwave",
+    "author": "Grant Smith",
+    "repo": "grjsmith/Neon-Synthwave",
+    "screenshot": "screenshot.jpg",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Vauxhall",
+    "author": "CyanVoxel",
+    "repo": "CyanVoxel/vauxhall-obsidian",
+    "screenshot": "cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Allium",
+    "author": "Nullglyph",
+    "repo": "nulglyph/Allium",
+    "screenshot": "AlliumScreenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Pale - 淡",
+    "author": "Elhary",
+    "repo": "Elhary/obsidian-Pale",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Creme brulee",
+    "author": "Anareaty",
+    "repo": "anareaty/creme-brulee-obsidian-theme",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Dynamic Color",
+    "author": "Rody Davis",
+    "repo": "rodydavis/obsidian-dynamic-color",
+    "screenshot": "screenshots/light-purple.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Dark Castle",
+    "author": "scottgriv",
+    "repo": "scottgriv/Dark-Castle-Obsidian",
+    "screenshot": "screenshot-small.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "RetroNotes",
+    "author": "Sr.Campelo",
+    "repo": "sr-campelo/retronotes",
+    "screenshot": "cover.jpg",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Bossidian",
+    "author": "BossElijah",
+    "repo": "BossElijah/bossidian",
+    "screenshot": "images/image-1-small.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Aurora-Twilight",
+    "author": "Quintavalle Pietro",
+    "repo": "Quinta0/Aurora-Twilight",
+    "screenshot": "image-small.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Evergreen-Shadow",
+    "author": "Quinta0",
+    "repo": "Quinta0/Evergreen-Shadow",
+    "screenshot": "Evergreen-Shadow-small.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Velvet-Moon",
+    "author": "Quinta0",
+    "repo": "Quinta0/Velvet-Moon",
+    "screenshot": "Velvet-Moon-small.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Midnight-Fjord",
+    "author": "Quinta0",
+    "repo": "Quinta0/Midnight-Fjord",
+    "screenshot": "Midnight-Fjord-small.png",
+    "modes": ["dark"]
+  },
+	{
+    "name": "Mint-Breeze",
+    "author": "Quinta0",
+    "repo": "Quinta0/Mint-Breeze",
+    "screenshot": "Mint-Breeze-small.png",
+    "modes": ["light"]
+  },
+  {
+    "name": "Lavender-Mist",
+    "author": "Quinta0",
+    "repo": "Quinta0/Lavender-Mist",
+    "screenshot": "Lavender-Mist-small.png",
+    "modes": ["light"]
+  },
+	{
+    "name": "Northern-Sky",
+    "author": "Quinta0",
+    "repo": "Quinta0/Northern-Sky",
+    "screenshot": "Northern-Sky-small.png",
+    "modes": ["light"]
+  },
+  {
+  	"name": "Seamless View",
+  	"author": "Gustavo Salgado",
+  	"repo": "GustavoSZ124/Obsidian-Theme-Seamless-View",
+  	"screenshot": "assets/Seamless View.png",
+  	"modes": ["dark","light"]
+  },
+	{
+    "name": "Gummy-Revived",
+    "author": "WinnerWind",
+    "repo": "WinnerWind/gummy-revived",
+    "screenshot": "screenshot.png",
+    "modes": ["dark","light"]
+  },
+  {
+		"name": "Agate",
+		"author": "solmi",
+		"repo": "solm0/Agate",
+		"screenshot": "agate_screenshot.png",
+		"modes": ["light"]
+	},
+  {
+    "name": "Vanilla Palettes",
+    "author": "GnRlLeclerc",
+    "repo": "GnRlLeclerc/Vanilla-Theme-Palettes",
+    "screenshot": "thumbnail.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "Dark Clarity",
+    "author": "chenbihao",
+    "repo": "chenbihao/obsidian-theme-dark-clarity",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+	{
+  	"name": "Nier",
+  	"author": "exloseur3d",
+  	"repo": "exloseur3d/nier-theme",
+  	"screenshot": "preview_Nier_theme.png",
+  	"modes": ["dark"]
+	},
+  {
+    "name": "DarkEmber",
+    "author": "miz",
+    "repo": "miz-i/Obsidian-theme-DarkEmber",
+    "screenshot": "images/screenshot.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Pxld",
+    "author": "Lina674",
+    "repo": "Lina674/Pxld-Obsidian-Theme",
+    "screenshot": "merged_diagonal_resized.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "chiaroscuroflow",
+    "author": "Quinta0",
+    "repo": "Quinta0/chiaroscuroflow",
+    "screenshot": "cover.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "Muted-Blue",
+    "author": "HasanTheSyrian",
+    "repo": "HasanTheSyrian/Muted-Blue-Obsidian",
+    "screenshot": "preview.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Oreo",
+    "author": "carols12352",
+    "repo": "carols12352/Oreo-theme",
+    "screenshot": "images/thumbnail.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "Brainhack",
+    "author": "Spekulucius",
+    "repo": "Spekulucius/obsidian-brainhack",
+    "screenshot": "preview.png",
+    "modes": ["light", "dark"]
+  },
+  {
+    "name": "nobb",
+    "author": "buluw",
+    "repo": "buluw/nobb-obsidian",
+    "screenshot": "nobb-obtheme.jpg",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Vanilla AMOLED Color",
+    "author": "sskki",
+    "repo": "Sskki-exe/vanilla-amoled-theme-color",
+    "screenshot": "sample-screenshot-sm.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Abate",
+    "author": "ricedev10",
+    "repo": "ricedev10/Abate-theme",
+    "screenshot": "ScreenshotPreview.png",
+    "modes": ["light"]
+  },
+  {
+    "name": "Ayu Light & Mirage",
+    "author": "Taro",
+    "repo": "taronull/ayu-obsidian",
+    "screenshot": "cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Shade Sanctuary",
+    "author": "Elevict",
+    "repo": "Elevict/Shade-Sanctuary",
+    "screenshot": "cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Underwater",
+    "author": "Seniblue",
+    "repo": "Seniblue/Underwater",
+    "screenshot": "uw.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Kiwi Mono",
+    "author": "c-sooyoung",
+    "repo": "c-sooyoung/kiwi-mono-obsidian-theme",
+    "screenshot": "thumbnail.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Lumines",
+    "author": "Avesend",
+    "repo": "Avesend/obsidian-lumines",
+    "screenshot": "obsidian-lumines.png",
+    "modes": ["dark", "light"]
+  },
+	{
+    "name": "Colored Candy",
+    "author": "Erika Gozar",
+    "repo": "Erallie/colored-candy",
+    "screenshot": "colored-candy-thumbnail.png",
+    "modes": ["dark", "light"]
+	},
+  {
+    "name": "Adrenaline",
+    "author": "Spekulucius",
+    "repo": "Spekulucius/obsidian-adrenaline",
+    "screenshot": "adrenaline_thumbnail.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "OISTNB",
+    "author": "omsandeeppatil",
+    "repo": "omsandippatil/OISTNB",
+    "screenshot": "OISTNB.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Black",
+    "author": "Simon Ostini (behem0th)",
+    "repo": "b3h3m0th/black-obsidian-theme",
+    "screenshot": "screenshot_512x275.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Refined Default",
+    "author": "Faisal Tamano Jr.",
+    "repo": "FaisalTamanoJr/Refined-Default",
+    "screenshot": "banner.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Rose Red",
+    "author": "Atmanand Gauns",
+    "repo": "tu2-atmanand/RoseRed-ObsidianTheme",
+    "screenshot": "Thumbnail.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Minimal Edge",
+    "author": "Elhary",
+    "repo": "Elhary/Obsidian-Minimal-Edge",
+    "screenshot": "minimal-edge.png",
+    "modes": ["dark", "light"]
+  },
+	{
+    "name": "AMOLED Serenity",
+    "author": "Darth Demono",
+    "repo": "darthdemono/AMOLED-Serenity",
+    "screenshot": "AMOLED-Serenity-sm.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Hackthebox",
+    "author": "Golam",
+    "repo": "golam71/obsidian-hackthebox",
+    "screenshot": "dark.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Transparent",
+    "author": "Oczko24",
+    "repo": "Oczko24/Obsidian-transparent",
+    "screenshot": "cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Lagom",
+    "author": "LeslyeCream",
+    "repo": "LeslyeCream/Lagom-Obsidian-Theme",
+    "screenshot": "IMG_20241009_134537.jpg",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Simply Colorful",
+    "author": "Lorenzo Pegorari",
+    "repo": "LorenzoPegorari/SimplyColorful",
+    "screenshot": "preview.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "OneNice",
+    "author": "S.Sunhaloo - P.Roy",
+    "repo": "Sunhaloo/OneNice",
+    "screenshot": "OneNice.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Fancy-a-Story",
+    "author": "Kapirklaa",
+    "repo": "ElsaTam/obsidian-fancy-a-story",
+    "screenshot": "overview-mini.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Flexoki Warm",
+    "author": "ofalvai",
+    "repo": "ofalvai/flexoki-warm",
+    "screenshot": "screenshots/cover-small.png",
+    "modes": ["dark", "light"]
+	},
+  {
+    "name": "evangelion",
+    "author": "xero",
+    "repo": "xero/evangelion.obsidian",
+    "screenshot": "preview.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Borealis",
+    "author": "Juanchi Parra",
+    "repo": "juanchiparra/obsidian-borealis",
+    "screenshot": "docs/dark-cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+    "name": "Red-Shadow",
+    "author": "DKLiberty",
+    "repo": "DKLiberty/Red-Shadow",
+    "screenshot": "Resources/Screenshot.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Luminex",
+    "author": "abhimangs",
+    "repo": "abhimangs/Obsidian-Luminex",
+    "screenshot": "Assets/Obsidian-Cover.png",
+    "modes": ["dark", "light"]
+  },
+  {
+  "name": "Shadeflow",
+  "author": "Artorias",
+  "repo": "artorias305/obsidian-shadeflow",
+  "screenshot": "dark.png",
+  "modes": ["dark", "light"]
+  },
+  {
+    "name": "Orange",
+    "author": "Alex F",
+    "repo": "afrangi/Obsidian-Theme-Orange",
+    "screenshot": "screenshot.png",
+    "modes": ["dark", "light"]
+  },
+{
+    "name": "Winter Spices",
+    "author": "incantatem2",
+    "repo": "incantatem2/Obsidian-winter-spices",
+    "screenshot": "images/winterspices-thumbnail.jpg",
+    "modes": ["light"]
+  },
+  {
+    "name": "Consolas",
+    "author": "Pinei",
+    "repo": "pinei/obsidian-consolas-theme",
+    "screenshot": "screenshot.png",
+    "modes": ["dark"]
+  },
+  {
+    "name": "Neutral Academia",
+    "author": "incantatem2",
+    "repo": "incantatem2/Obsidian-neutral-academia",
+    "screenshot": "images/neutralacademia-dark-thumbnail.jpg",
+    "modes": ["dark", "light"]
   }
 ]
