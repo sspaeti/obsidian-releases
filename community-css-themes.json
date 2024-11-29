@@ -2216,12 +2216,6 @@
     "screenshot": "images/neutralacademia-dark-thumbnail.jpg",
     "modes": ["dark", "light"]
   },
-  {
-    "name": "Kanagawa Paper",
-    "author": "sspaeti",
-    "repo": "sspaeti/obsidian_kanagawa_paper",
-    "screenshot": "dark.jpg",
-  },
 {
     "name": "Ink",
     "author": "harmtemolder",
@@ -2249,5 +2243,11 @@
     "repo": "incantatem2/Obsidian-mulled-wine",
     "screenshot": "images/mulledwine-thumbnail.jpg",
     "modes": ["dark", "light"]
+  },
+  {
+    "name": "Kanagawa Paper",
+    "author": "sspaeti",
+    "repo": "sspaeti/obsidian_kanagawa_paper",
+    "screenshot": "dark.jpg",
   }
 ]
